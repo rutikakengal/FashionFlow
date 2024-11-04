@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionFlow - Ecommerce</title>
+   
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" herf="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <style>
+        .testimonal__card {
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            height: 450px;
+        }
+
+        .testimonal__card:hover {
+            transform: translateY(-10px);
+            background-color: #c5bebd;
+        }
+    
+         .testimonal__card img{
+            width: 100%;
+            aspect-ratio: 2/2.5;
+            object-fit: cover;
+         }
+
+
+        /* Testimonial Title */
+        .testimonal__title {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        /* Testimonial Description */
+        .testimonal__description {
+
+            font-size: 1.2rem;
+            padding: 0.75rem 1rem;
+        }
+
+
+        .testimonal__swiper {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Cards Wrapper */
+        .cards {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .my2 {
+            background-color: black;
+            color: white;
+            padding: 5px 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+       
+    </style>
+</head>
+</head>
+<body>
+   
+    <!-- header section  -->
+    <header class="header" id="header">
+          <div class="logo">
+            <a href="/"> <img src="images/fashionflowlogo.png" alt="Logo" srcset=""> </a>
+            <i class="fa-solid fa-bars menu" id="menu"></i>
+        </div>
+
+        <nav class="navigation">
+            <div class="pro-tabs-container">
+                <ul id="pro-tabs" class="nav-links" >
+                    <li class="nav-link border">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-link border">
+                        <a href="#Necklace">Necklace</a>
+                    </li>
+                    <li class="nav-link border">
+                        <a href="#Handbags">Handbags</a>
+                    </li>
+                    <li class="nav-link border">
+                        <a href="#Men">Men's</a>
+                    </li>
+                    <li class="nav-link border" style="margin-left: 15px;">
+                        <a href="contact.html">Contact Us</a>
+                    </li> 
+                </ul>
+        </div>
+        </nav>
+
+        <nav class="utils">
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                </li>
+                <li class="nav-link">
+                    <a href="login-sginup.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     <main>
+        <div class="container">
+            <div class="slider">
+                <a href="#Handbags"><img src="images/SALEACC.png" alt="" height="450px" width="100%vw"></a>      
+            </div>
+            <h2 class="my2" id="Necklace">Gleam & Glam</h2>
+            <div class="cards">
+
+                <div class="testimonal__swiper">
+                <!-- 1 -->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/11718581_811942.jpg?w=560&hdpi=1"
+                              alt="" style="
+                               width: 280px;
+                                height: 280px;
+                                object-fit: cover;padding: 5px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">
+                                Coretta Layered Gold Necklace</h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $19
+                            </p>
+                            <div class="button-container">
+                             <button class="add-to-cart" onclick="addToCart( 'Coretta Layered Gold Necklace', 19, 'https://www.lulus.com/images/product/xlarge/11718581_811942.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                      
+                </div>
+
+
+                
+                <div class="testimonal__swiper">
+                  <!-- 2 -->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/11298161_942862.jpg?w=560&hdpi=1"
+                             alt="" style="
+                             width: 280px;
+                              height: 280px;
+                              object-fit: cover;padding: 5px;">
+                            <h2 class="testimonal__title"
+                                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Gold Layered Bar Charm Necklace
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $15
+                            </p>
+                            <div class="button-container">
+                             <button class="add-to-cart" onclick="addToCart( 'Gold Layered Bar Charm Necklace', 15, 'https://www.lulus.com/images/product/xlarge/11298161_942862.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+  
+                   
+                <div class="testimonal__swiper">
+                    <!-- 3 -->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img  src="https://www.lulus.com/images/product/xlarge/11215801_604232.jpg?w=560&hdpi=1"
+                             alt="" style="padding: 5px; 
+                                width: 280px;
+                                height: 280px;
+                                object-fit: cover; /* Ensures the image is resized and cropped to fit the given dimensions */
+                              ">
+                            <h2 class="testimonal__title"
+                                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Pretty Gold and Pearl Necklace
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $16
+                            </p>
+                            <div class="button-container">
+                             <button class="add-to-cart" onclick="addToCart( 'Pretty Gold and Pearl Necklace', 16, 'https://www.lulus.com/images/product/xlarge/11215801_604232.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+                
+                <div class="testimonal__swiper">
+                    <!-- 4 -->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img src="https://www.lulus.com/images/product/xlarge/3407210_672282.jpg?w=560&hdpi=1"
+                            alt="" style="padding: 5px;
+                             width: 280px;
+                             height: 280px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Gold Layered Choker Necklace
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $19
+                            </p>
+                            <div class="button-container">
+                             <button class="add-to-cart" onclick="addToCart( 'Gold Layered Choker Necklace', 19, 'https://www.lulus.com/images/product/xlarge/3407210_672282.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+
+              <div class="testimonal__swiper">
+                    <!--5-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img src="https://www.lulus.com/images/product/xlarge/11009221_2285736.jpg?w=560&hdpi=1"
+                            alt="" style="padding: 5px;
+                             width: 280px;
+                             height: 280px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Gold and Ivory Floral Pearl Drop Earrings
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $19
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Gold and Ivory Floral Pearl Drop Earrings', 19, 'https://www.lulus.com/images/product/xlarge/11009221_2285736.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                      </article>
+                    </div>
+                    
+                </div>
+            
+                <div class="testimonal__swiper">
+                    <!-- 6 -->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/11944961_421262.jpg?w=560&hdpi=1"
+                             alt="" style="padding: 5px;
+                              width: 280px;
+                              height: 280px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Alter Ego Gold Hoop Earrings
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $12
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Alter Ego Gold Hoop Earrings', 12, 'https://www.lulus.com/images/product/xlarge/11944961_421262.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+
+                
+                <div class="testimonal__swiper">
+                    <!-- 7-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/4167730_835582.jpg?w=560&hdpi=1"
+                             alt="" style="padding: 5px;
+                              width: 280px;
+                              height: 280px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Glitz Gold Rhinestone Tassel Earrings
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $25
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Glitz Gold Rhinestone Tassel Earrings', 25, 'https://www.lulus.com/images/product/xlarge/4167730_835582.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+               
+                <div class="testimonal__swiper">
+                    <!-- 8 -->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/4601210_877342.jpg?w=560&hdpi=1" 
+                            alt=""style="padding: 5px;
+                             width: 280px;
+                             height: 300px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Future Gold Drop Earrings
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $15
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Future Gold Drop Earrings', 15, 'https://www.lulus.com/images/product/xlarge/4601210_877342.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+              
+                
+                
+            </div>
+            <h2  class="my2" id="Handbags">Urban Glam Bags</h2>
+            <div class="cards">
+                
+                <div class="testimonal__swiper">
+                    <!-- 1 -->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/11969041_2428911.jpg?w=560&hdpi=1" alt=""
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 280px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Pink Beaded Pearl Hard-Sided Clutch
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $39
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Pink Beaded Pearl Hard-Sided Clutch', 39, 'https://www.lulus.com/images/product/xlarge/11969041_2428911.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+
+                <div class="testimonal__swiper">
+                    <!-- 2-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/12158441_2460171.jpg?w=560&hdpi=1" alt=""
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 280px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Black and Gold Crescent Metal Handbag
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $35
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Black and Gold Crescent Metal Handbag', 35, 'https://www.lulus.com/images/product/xlarge/12158441_2460171.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+
+        
+                <div class="testimonal__swiper">
+                    <!-- 3-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/12058961_2506791.jpg?w=560&hdpi=1" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 280px;">
+                            <h2 class="testimonal__title" alt=""
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Gold Metallic Croc-Embossed Shoulder Bag
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $20
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Gold Metallic Croc-Embossed Shoulder Bag', 20, 'https://www.lulus.com/images/product/xlarge/12058961_2506791.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+                
+                <div class="testimonal__swiper">
+                    <!-- 4-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/11770021_2421911.jpg?w=560&hdpi=1" alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 280px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Quintessential Brown Vegan Leather Tote Bag
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $68
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Quintessential Brown Vegan Leather Tote Bag', 68, 'https://www.lulus.com/images/product/xlarge/11770021_2421911.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+
+                <div class="testimonal__swiper">
+                    <!-- 5-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/10845601_751182.jpg?w=560&hdpi=1" alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 300px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Back to Business Grey Tote
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $59
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Back to Business Grey Tote', 59, 'https://www.lulus.com/images/product/xlarge/10845601_751182.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+               
+                <div class="testimonal__swiper">
+                    <!-- 6-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/6602961_1209571.jpg?w=560&hdpi=1" alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 300px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Beige Woven Straw Tote Bag
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $39
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Beige Woven Straw Tote Bag', 39, 'https://www.lulus.com/images/product/xlarge/6602961_1209571.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+                <div class="testimonal__swiper">
+                    <!-- 7-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/5154830_1029302.jpg?w=560&hdpi=1" alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height:300px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Black and Cognac Tote Bag
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $55
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Black and Cognac Tote Bag', 55, 'https://www.lulus.com/images/product/xlarge/5154830_1029302.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+                <div class="testimonal__swiper">
+                    <!-- 8-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://www.lulus.com/images/product/xlarge/10325141_1681016.jpg?w=560&hdpi=1" alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 280px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Champagne Satin Knot Handle Clutch Bag
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $75
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Champagne Satin Knot Handle Clutch Bag', 75, 'https://www.lulus.com/images/product/xlarge/10325141_1681016.jpg?w=560&hdpi=1')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+            </div>   
+                
+            <h2 class="my2" id="Men">Gentlemen's Gear</h2>
+            <div class="cards">
+                <div class="testimonal__swiper">
+                    <!-- 1-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F14%2F01%2F1401c46c54bddf379f088be300d4555ff901e0cd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"  alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 300px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">3-pack rings
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $29
+                            </p>
+                            <div class="button-container">
+                                 <button class="add-to-cart" onclick="addToCart( '3-pack rings', 29, 'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F14%2F01%2F1401c46c54bddf379f088be300d4555ff901e0cd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+
+                <div class="testimonal__swiper">
+                    <!-- 2-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd4%2F4d%2Fd44d5b8a3775f5ad28972c6c22fd472099f81eed.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_accessories_jewellery_necklaces%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"  alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 300px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">2-pack necklaces
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $22
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( '-pack necklaces', 22, 'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd4%2F4d%2Fd44d5b8a3775f5ad28972c6c22fd472099f81eed.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_accessories_jewellery_necklaces%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+                
+                <div class="testimonal__swiper">
+                    <!-- 3-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F62%2F92%2F62922a9237622c611f8d037263002a5ca9eadcc6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVEDETAIL%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"  alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 300px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Blue light glasses
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $49
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Blue light glasses', 49, 'https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F62%2F92%2F62922a9237622c611f8d037263002a5ca9eadcc6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVEDETAIL%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+                <div class="testimonal__swiper">
+                    <!-- 4-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://imgproxy.johnhenric.com/preset:sharp/resize:fit:640/gravity:nowe/quality:80/aHR0cHM6Ly9qb2huaGVucmljLmNlbnRyYWNkbi5uZXQvY2xpZW50L2R5bmFtaWMvaW1hZ2VzLzMxMzFfMDU1Yzk1YzEyZi1hMDI4NDQtNTktMS1vcmlnaW5hbC5qcGc="  alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 280px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Blue & Burgundy Tie Geometric
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $39
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Blue & Burgundy Tie Geometric', 39, 'https://imgproxy.johnhenric.com/preset:sharp/resize:fit:640/gravity:nowe/quality:80/aHR0cHM6Ly9qb2huaGVucmljLmNlbnRyYWNkbi5uZXQvY2xpZW50L2R5bmFtaWMvaW1hZ2VzLzMxMzFfMDU1Yzk1YzEyZi1hMDI4NDQtNTktMS1vcmlnaW5hbC5qcGc=')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+                <div class="testimonal__swiper">
+                    <!-- 5-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2F63%2F436334b784517072c28e6c9fd092f0332c47b554.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_accessories_ties_bowties_handkerchiefs%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"   alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 300px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">2-pack ties
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $29
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( '2-pack ties', 29, 'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2F63%2F436334b784517072c28e6c9fd092f0332c47b554.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_accessories_ties_bowties_handkerchiefs%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+
+                <div class="testimonal__swiper">
+                    <!-- 6-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://imgproxy.johnhenric.com/preset:sharp/resize:fit:640/gravity:nowe/quality:80/aHR0cHM6Ly9qb2huaGVucmljLmNlbnRyYWNkbi5uZXQvY2xpZW50L2R5bmFtaWMvaW1hZ2VzLzExOTJfNGYxMmQ0NWVmNy1hMDEyMTMtMDItMS1vcmlnaW5hbC5qcGc=" alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 300px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Black Lapel Pin Vigo
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $24
+                            </p>
+                            <div class="button-container">
+                                <button class="add-to-cart" onclick="addToCart( 'Black Lapel Pin Vigo', 24, 'https://imgproxy.johnhenric.com/preset:sharp/resize:fit:640/gravity:nowe/quality:80/aHR0cHM6Ly9qb2huaGVucmljLmNlbnRyYWNkbi5uZXQvY2xpZW50L2R5bmFtaWMvaW1hZ2VzLzExOTJfNGYxMmQ0NWVmNy1hMDEyMTMtMDItMS1vcmlnaW5hbC5qcGc=')">Add to Cart</button>
+
+                                <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <p class="title">Share</p>
+                                    <div class="quick-share" >
+                                        <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                        <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                        <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                    </div>
+                                    <div class="link-box">
+                                        <p class="link">http:example.html</p>
+                                        <button class="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+
+                <div class="testimonal__swiper">
+                    <!-- 7-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://imgproxy.johnhenric.com/preset:sharp/resize:fit:640/gravity:nowe/quality:80/aHR0cHM6Ly9qb2huaGVucmljLmNlbnRyYWNkbi5uZXQvY2xpZW50L2R5bmFtaWMvaW1hZ2VzLzE3MTBfNzA5ZTQ4ZTkwZi1hMDE3MjctMjItMS1vcmlnaW5hbC5qcGc="  alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 300px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Red Velvet Bow Tie
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $21                           </p>
+                                <div class="button-container">
+                                    <button class="add-to-cart" onclick="addToCart( 'Red Velvet Bow Tie', 21, 'https://imgproxy.johnhenric.com/preset:sharp/resize:fit:640/gravity:nowe/quality:80/aHR0cHM6Ly9qb2huaGVucmljLmNlbnRyYWNkbi5uZXQvY2xpZW50L2R5bmFtaWMvaW1hZ2VzLzE3MTBfNzA5ZTQ4ZTkwZi1hMDE3MjctMjItMS1vcmlnaW5hbC5qcGc=')">Add to Cart</button>
+
+                                    <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                    <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                    <div class="share-options">
+                                        <p class="title">Share</p>
+                                        <div class="quick-share" >
+                                            <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                            <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                            <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                            <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                        </div>
+                                        <div class="link-box">
+                                            <p class="link">http:example.html</p>
+                                            <button class="copy-btn">copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                    
+                </div>
+
+                <div class="testimonal__swiper">
+                    <!-- 8-->
+                    <div class="cards">
+                        <article class="testimonal__card">
+                            <img
+                            src="https://fossil.scene7.com/is/image/FossilPartners/BQ1125_main?$sfcc_fos_large$"  alt="" 
+                            style="padding: 5px;
+                             width: 280px;
+                             height: 300px;">
+                            <h2 class="testimonal__title"
+                                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: hsl(203, 30%, 26%);">Flynn Chronograph Watch
+                                </h2>
+                            <p class="testimonal__description"
+                                style="font-family: var(--ff-poppins);color: hsl(208, 7%,46%);">
+                                Price - $96                      </p>
+                                <div class="button-container">
+                                    <button class="add-to-cart" onclick="addToCart( 'Flynn Chronograph Watch', 96, 'https://fossil.scene7.com/is/image/FossilPartners/BQ1125_main?$sfcc_fos_large$')">Add to Cart</button>
+
+                                    <button class="save-icon"><i class="fas fa-bookmark"></i></button>
+                                    <button class="share-icon"><i class="fas fa-share-alt"></i></button>
+                                    <div class="share-options">
+                                        <p class="title">Share</p>
+                                        <div class="quick-share" >
+                                            <button class="quick-btns"><i class="fab fa-facebook facebook-icon"></i></button>
+                                            <button class="quick-btns"><i class="fab fa-whatsapp whatsapp-icon"></i></i></button>
+                                            <button class="quick-btns"><i class="fab fa-x-twitter twitter-icon"></i></i></button>
+                                            <button class="quick-btns"><i class="fab fa-instagram instagram-icon"></i></i></button>
+                                        </div>
+                                        <div class="link-box">
+                                            <p class="link">http:example.html</p>
+                                            <button class="copy-btn">copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main> 
+    <br>
+    <footer class="footer" style="margin-top: -2%;">
+
+        <div class="footer-section">
+
+            <h1>Contact Us</h1>
+            <ul class="footer-list">
+                <li>fashionflow0023@gmail.com</li>
+                <li>
+                    2nd Floor, Andheri East, Mumbai, Maharashtra 400050, India
+                </li>
+                <li>+91 xxxxxx2020</li>
+
+                <li class="border-list">
+                </li>
+                <li class="socials">
+                    <a href="https://www.linkedin.com/in/rutika-kengal-b3b0a22b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" id="linkedin" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/rutikakengal" id="github" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://x.com/rutika23k?s=09" id="twitter" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/your_instagram" id="instagram" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h1>Quick Links</h1>
+            <ul class="footer-list">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                <li><a href="return-policy.html">Return Policy</a></li>
+                <li><a href="https://github.com/Tejashri-Taral/TrendTrove-Ecommerce" target="_blank">Star Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h1>Subscribe to Newsletter</h1>
+            <ul class="footer-list">
+                <li>Be the first to know about exclusive deals and new arrivals straight to your inbox.</li>
+                <li>Join our fashion community today!</li>
+                <li class="sub">
+                    <input type="email" placeholder="Enter your email here" id="email-input">
+                    <button class="btn" id="open-btn">Subscribe</button>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+        
+        <div class="footer-copyright">
+            <div id="copyright">&copy; 2024 FashionFlow. All Rights Reserved.</div>
+        </div>
+        
+        <div class="modal-box" id="modalbox" style="display: none;">
+            <div class="modal" id="modal">
+                <div id="close-btn">&times;</div>
+                <div class="modal-content">
+                    <img src="images\confirmation.png" alt="" height="100px" >
+                    <h2>Subscription Successful!</h2>
+                    <p>Thank you for subscribing.</p>
+                    <p> You will receive notifications via email.</p>
+                </div>
+                <li class="socials">
+                    <a href="https://www.linkedin.com/in/rutika-kengal-b3b0a22b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" id="linkedin" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/rutikakengal" id="github" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://x.com/rutika23k?s=09" id="twitter" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/your_instagram" id="instagram" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                </div>
+            </div>
+        </div>
+        
+    
+    <script>
+        let openbtn = document.getElementById('open-btn');
+let modalbox = document.getElementById('modalbox');
+let closebtn = document.getElementById('close-btn');
+let emailInput = document.getElementById('email-input');
+
+// Email validation function
+function isValidEmail(email) {
+        // Regular expression for validating an email
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+
+    openbtn.addEventListener('click', function () {
+        // Validate email
+        if (emailInput.value === '') {
+            alert('Please enter your email address.');
+        } else if (!isValidEmail(emailInput.value)) {
+            alert('Please enter a valid email address.');
+        } else {
+            modalbox.style.display = 'block'; // Show the modal
+        }
+    });
+
+    closebtn.addEventListener('click', function () {
+        modalbox.style.display = 'none'; // Hide the modal
+    });
+     // Close modal when clicking outside of it
+     modalbox.addEventListener('click', function(event) {
+        if (event.target === modalbox) {
+            modalbox.style.display = 'none'; // Hide modal if the background is clicked
+        }
+    });
+
+    </script>
+    
+
+    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+
+    (function() {
+        let headerVisible = false;
+        document.getElementById("menu").addEventListener("click", function () {
+            if (headerVisible === false) {
+                document.getElementById("header").style.height = "290px";
+                headerVisible = true;
+            } else {
+                document.getElementById("header").style.height = "50px";
+                headerVisible = false;
+            }
+        });
+
+        // Show "Go to Top" button after scrolling down
+        const goTopBtn = document.querySelector(".gotopbtn");
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 200) {  // Show the button after scrolling down 200px
+                goTopBtn.style.display = "block";
+            } else {
+                goTopBtn.style.display = "none";
+            }
+        });
+
+    })();  // IIFE to avoid polluting global scope
+    
+    document.getElementById("cart-icon").addEventListener("click", function() {
+    window.location.href = "cart.html";
+});
+
+// Select all share buttons and share option containers
+const shareButtons = document.querySelectorAll('.share-icon');
+const shareOptions = document.querySelectorAll('.share-options');
+
+// Loop through each share button and attach event listener
+shareButtons.forEach((shareBtn, index) => {
+    shareBtn.addEventListener('click', () => {
+        console.log(`Share button ${index + 1} clicked`);
+        shareOptions[index].classList.toggle('active');
+    });
+});
+
+
+const copyBtns = document.querySelectorAll('.copy-btn'); // Get all copy buttons
+const linkTexts = document.querySelectorAll('.link'); // Get all link texts
+
+// Loop through each copy button
+copyBtns.forEach((copyBtn, index) => {
+    copyBtn.addEventListener('click', () => {
+        const textToCopy = linkTexts[index].innerText; // Get the text to copy for the current button
+
+        // Use the Clipboard API to copy the text
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                alert('Link copied to clipboard!');
+            })
+            .catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+    });
+});
+    // Select all save buttons
+const saveButtons = document.querySelectorAll('.save-icon');
+
+// Loop through each save button and attach event listener
+saveButtons.forEach((saveBtn) => {
+    saveBtn.addEventListener('click', () => {
+        saveBtn.classList.toggle('active'); // Toggle the active class
+    });
+});
+
+ // Add item to the cart function
+ function addToCart(name, price, image) {
+    // Retrieve cart from localStorage or initialize it as an empty array
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Add new item to the cart array
+    cart.push({ name, price, image, quantity: 1 });
+
+    // Save updated cart back to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    alert(name + ' has been added to the cart');
+  }
+
+</script>    
+</body>
+</html>
